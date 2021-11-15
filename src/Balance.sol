@@ -13,7 +13,6 @@ contract Balance {
     
     
     constructor(){
-        
         contractState = State.Inicialized;
         
         balance[msg.sender] = 1000;
