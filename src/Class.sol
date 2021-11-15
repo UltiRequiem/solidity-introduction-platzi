@@ -3,6 +3,7 @@
 pragma solidity ^0.8.3;
 
 contract Class {
+    
     struct Student {
         string name;
         uint document;
