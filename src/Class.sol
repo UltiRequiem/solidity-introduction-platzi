@@ -8,9 +8,9 @@ contract Class {
         uint document;
     }
     
-    Alumno[] alumnos;
+    Student[] public students;
     
-    constructor() {
-        alumnos.push(Alumno({name:"Zero", document: 1234}))
+    constructor(){
+        students.push(Student({name:"Zero", document: 1234}));
     }
 }
