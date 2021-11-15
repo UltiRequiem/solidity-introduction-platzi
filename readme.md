@@ -1,6 +1,6 @@
-# Title
+# Solidity Introduction Course
 
-Basic Description
+![Cover](./cover.jpg)
 
 ## License
 
