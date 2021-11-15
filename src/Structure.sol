@@ -1,9 +1,14 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.7.0 < 0.9.0;
+pragma solidity ^0.8.3;
 
 contract Structure{
-    constructor(){
-        
+    int quantity;
+    bool signed;
+    address direction;
+
+    constructor(bool isSigned){
+      direction = msg.sender;
+      signed = isSigned;
     }
 }
