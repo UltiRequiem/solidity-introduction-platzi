@@ -5,11 +5,15 @@ pragma solidity ^0.8.3;
 contract Functions {
     uint private result;
     
-    function sum(uint nOne, uint nTwo) public pure returns (uint){
+    function Sum(uint nOne, uint nTwo) public pure returns (uint){
         return nOne + nTwo;
     }
+
+    func InternalSum(uint one, uint two)private returns(uint){
+        return one + two;
+    }
     
-    function getResult() public view returns (uint){
+    function GetResult() public view returns (uint){
         return result;
     }
 }
