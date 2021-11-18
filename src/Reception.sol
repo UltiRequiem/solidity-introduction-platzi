@@ -3,6 +3,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Reception {
+  uint public sendedAmount;
   mapping(address => uint) balances;
   
   receive() external payable{
@@ -14,8 +15,8 @@ contract Reception {
   }
   
   function getBalance(uint num) public payable{
-      uint amount = msg.value;
-      
-      amount = num;
+      sendedAmount = msg.value;
+
+      uint amount = num;
   }
 }
