@@ -14,7 +14,8 @@ contract Mdifiers{
     }
     
     modifier itsOwner(){
-        if (msg.sender != owner) revert();
+        require(msg.sender == owner, "The user its not the owner of the contract.");
         _;
     }
-}
+    
+} 
