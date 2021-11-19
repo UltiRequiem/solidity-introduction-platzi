@@ -9,7 +9,7 @@ contract Functions {
         return nOne + nTwo;
     }
 
-    func InternalSum(uint one, uint two)private returns(uint){
+    function InternalSum(uint one, uint two)private returns(uint){
         return one + two;
     }
     
